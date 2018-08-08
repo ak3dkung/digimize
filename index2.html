@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Digimize - Tutorial Advertiser</title>
+    <link rel="apple-touch-icon" sizes="57x57" href="images/apple-icon-57x57.png"><link rel="apple-touch-icon" sizes="60x60" href="images/apple-icon-60x60.png"><link rel="apple-touch-icon" sizes="72x72" href="images/apple-icon-72x72.png"><link rel="apple-touch-icon" sizes="76x76" href="images/apple-icon-76x76.png"><link rel="apple-touch-icon" sizes="114x114" href="images/apple-icon-114x114.png"><link rel="apple-touch-icon" sizes="120x120" href="images/apple-icon-120x120.png"><link rel="apple-touch-icon" sizes="144x144" href="images/apple-icon-144x144.png"><link rel="apple-touch-icon" sizes="152x152" href="images/apple-icon-152x152.png"><link rel="apple-touch-icon" sizes="180x180" href="images/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="images/android-icon-192x192.png"><link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png"><link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png"><link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png"><link rel="manifest" href="images/manifest.json"><meta name="msapplication-TileColor" content="#ffffff"><meta name="msapplication-TileImage" content="/ms-icon-144x144.png"><meta name="theme-color" content="#ffffff">
+    <link href="https://fonts.googleapis.com/css?family=Mitr" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/reset.css">
+    <link type="text/css" rel="stylesheet" href="css/animate.css">
+    <link type="text/css" rel="stylesheet" href="css/jquery.bxslider.css">
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<script>
+    window.fbAsyncInit = function() {
+        FB.init({
+            appId      : '192673578165183',
+            cookie     : true,
+            xfbml      : true,
+            version    : 'v2.12'
+        });
+        FB.AppEvents.logPageView();
+    };
+    (function(d, s, id){
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) {return;}
+        js = d.createElement(s); js.id = id;
+        js.src = "https://connect.facebook.net/en_US/sdk.js";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+
+    function checkLoginState() {
+        FB.getLoginStatus(function(response) {
+            alert(response.status);
+        });
+    }
+</script>
+<!-- Navbar Menu -->
+<div class="section-header">
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#"><img src="images/logo.png"></a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">หน้าหลัก</a></li>
+                <li><a href="#">คอร์ส</a></li>
+                <li><a href="#">ราคา</a></li>
+                <li><a href="#">เกี่ยวกับเรา</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- End of Navbar -->
+<!-- Section Header -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-5 col-md-offset-1 text-center floating">
+                <img src="images/hero.svg" class="wow fadeIn" data-wow-delay="250ms">
+            </div>
+            <div class="col-md-5 text-center head-txt">
+                <h1 class="wow fadeInRight" data-wow-delay="300ms">ปลดล็อคยอดขายทะลุ <span>"ล้าน"</span></h1>
+                <h2 class="wow fadeInRight" data-wow-delay="350ms">ด้วยเคล็ดลับการทำ Facebook Ads</h2>
+                <h2 class="wow fadeInRight" data-wow-delay="400ms">ที่ไม่มีใครเคยเปิดเผยมาก่อน</h2>
+                <div class="spector"></div>
+                <a href="#" class="btn pro_btn wow fadeInUp" data-wow-delay="450ms">เรียนรู้เพิ่มเติม</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End of Section Header -->
+<!-- Section White -->
+<div class="section-white">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-7 text-center">
+                <p class="wow fadeIn" data-wow-delay="250ms">โดยโค้ชผู้มีประสบการณ์ในวงการโฆษณา<span>มากว่า 6 ปี</span><br>
+                การันตีด้วย Certificate จาก Google และ Facebook <span>มากกว่า 7 ใบ</span></p>
+                <img src="images/fb-gg.png" class="wow shake" data-wow-delay="350ms">
+                <div class="spector"></div>
+                <x class="hidden-xs hidden-md hidden-sm">อนวัช ประดิษฐ์ศิลป์</x><br>
+                <p class="hidden-xs hidden-md hidden-sm">ปัจจุบันดำรงตำแหน่ง Digital Media Planing Manager<br>
+                    Yell Advertising บริษัท Digital Agency ชั้นนำของประเทศไทย</p>
+            </div>
+            <div class="col-md-5">
+                <img src="images/nick.png" id="nick" class="hidden-xs hidden-sm wow fadeIn" data-wow-delay="250ms">
+                <div class="text-center">
+                <img src="images/nick.png" class="hidden-lg hidden-md wow fadeIn" data-wow-delay="250ms"><br><br>
+                <x class="hidden-md hidden-lg">อนวัช ประดิษฐ์ศิลป์</x>
+                <p class="hidden-md hidden-lg">ปัจจุบันดำรงตำแหน่ง Digital Media Planing Manager
+                    Yell Advertising บริษัท Digital Agency ชั้นนำของประเทศไทย</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End of Section White -->
+<!-- Section Orange -->
+<div class="section-orange">
+    <div class="container-fluid">
+        <div class="row text-center">
+            <div class="col-md-6 floating">
+                <img src="images/fb-ads.png">
+            </div>
+            <div class="col-md-5"></div>
+            <h1>ยิง Facebook Ads สร้างยอดขายเป็นเท่าตัว</h1>
+            <p>ด้วยสุดยอดเครื่องมือที่มีประสิทธิภาพสูง</p>
+            <div class="col-md-2 col-xs-12">
+                <img src="images/goal-1.png">
+                <p>สร้าง Ads มืออาชีพ</p>
+            </div>
+            <div class="col-md-2 col-xs-12">
+                <img src="images/goal-2.png">
+                <p>วิเคราะห์เป้าหมาย</p>
+            </div>
+            <div class="col-md-2 col-xs-12">
+                <img src="images/goal-3.png">
+                <p>เพิ่มยอดขาย</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End of Section Orange -->
+<!-- Section Blue -->
+<div class="section-blue">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12 text-center wow headShake" data-wow-delay="150ms">
+                <h1>คุณจะได้พบกับ</h1>
+                <p>หลักสูตรแบบเจาะลึกและถูกต้อง ในรูปแบบที่คุณไม่เคยสัมผัสจากที่ใดมาก่อน</p>
+            </div>
+        </div>
+            <div class="row wow fadeInUp" data-wow-delay="200ms">
+                <div class="col-md-2">
+                    <img src="images/course-1.png">
+                </div>
+                <div class="col-md-10">
+                    <h2>Course Outline หัวข้อ</h2>
+                    <x>ปาสเตอร์อิ่มแปร้แฟร์ คอร์รัปชั่น เซลส์เจ็ตจิตพิสัย ไมค์ เยอบีร่าฮ่องเต้โหลยโท่ย ไวอากร้าไฮแจ็คช็อต เลสเบี้ยน คาแรคเตอร์จิ๊กโก๋เทวาธิราช ฮาราคีรี ไทยแลนด์อมาตยาธิปไตยเบนโตะฮิบิ๊ก บร็อกโคลีไฟต์ลิมิตช็อค อุปัทวเหตุเลดี้เก๊ะ สเตอริโอสหรัฐคลิปโหงว ฮาราคีรีทับซ้อน ฮิแจ๊กพอตแฮมเบอร์เกอร์คาร์โก้เกสต์เฮาส์ แช่แข็งติ่มซำฟีดครัวซองชัตเตอร์ ปาสเตอร์อิ่มแปร้แฟร์ คอร์รัปชั่น เซลส์เจ็ตจิตพิสัย ไมค์ เยอบีร่าฮ่องเต้โหลยโท่ย ไวอากร้าไฮแจ็คช็อต เลสเบี้ยน คาแรคเตอร์จิ๊กโก๋เทวาธิราช ฮาราคีรี ไทยแลนด์อมาตยาธิปไตยเบนโตะฮิบิ๊ก บร็อกโคลีไฟต์ลิมิตช็อค อุปัทวเหตุเลดี้เก๊ะ สเตอริโอสหรัฐคลิปโหงว ฮาราคีรีทับซ้อน ฮิแจ๊กพอตแฮมเบอร์เกอร์คาร์โก้เกสต์เฮาส์ แช่แข็งติ่มซำฟีดครัวซองชัตเตอร์</x>
+                </div>
+            </div>
+        <div class="row wow fadeInUp" data-wow-delay="300ms">
+            <div class="col-md-2">
+                <img src="images/course-1.png">
+            </div>
+            <div class="col-md-10">
+                <h2>Course Outline หัวข้อ</h2>
+                <x>ปาสเตอร์อิ่มแปร้แฟร์ คอร์รัปชั่น เซลส์เจ็ตจิตพิสัย ไมค์ เยอบีร่าฮ่องเต้โหลยโท่ย ไวอากร้าไฮแจ็คช็อต เลสเบี้ยน คาแรคเตอร์จิ๊กโก๋เทวาธิราช ฮาราคีรี ไทยแลนด์อมาตยาธิปไตยเบนโตะฮิบิ๊ก บร็อกโคลีไฟต์ลิมิตช็อค อุปัทวเหตุเลดี้เก๊ะ สเตอริโอสหรัฐคลิปโหงว ฮาราคีรีทับซ้อน ฮิแจ๊กพอตแฮมเบอร์เกอร์คาร์โก้เกสต์เฮาส์ แช่แข็งติ่มซำฟีดครัวซองชัตเตอร์ ปาสเตอร์อิ่มแปร้แฟร์ คอร์รัปชั่น เซลส์เจ็ตจิตพิสัย ไมค์ เยอบีร่าฮ่องเต้โหลยโท่ย ไวอากร้าไฮแจ็คช็อต เลสเบี้ยน คาแรคเตอร์จิ๊กโก๋เทวาธิราช ฮาราคีรี ไทยแลนด์อมาตยาธิปไตยเบนโตะฮิบิ๊ก บร็อกโคลีไฟต์ลิมิตช็อค อุปัทวเหตุเลดี้เก๊ะ สเตอริโอสหรัฐคลิปโหงว ฮาราคีรีทับซ้อน ฮิแจ๊กพอตแฮมเบอร์เกอร์คาร์โก้เกสต์เฮาส์ แช่แข็งติ่มซำฟีดครัวซองชัตเตอร์</x>
+            </div>
+        </div>
+        <div class="row wow fadeInUp" data-wow-delay="400ms">
+            <div class="col-md-2">
+                <img src="images/course-1.png">
+            </div>
+            <div class="col-md-10">
+                <h2>Course Outline หัวข้อ</h2>
+                <x>ปาสเตอร์อิ่มแปร้แฟร์ คอร์รัปชั่น เซลส์เจ็ตจิตพิสัย ไมค์ เยอบีร่าฮ่องเต้โหลยโท่ย ไวอากร้าไฮแจ็คช็อต เลสเบี้ยน คาแรคเตอร์จิ๊กโก๋เทวาธิราช ฮาราคีรี ไทยแลนด์อมาตยาธิปไตยเบนโตะฮิบิ๊ก บร็อกโคลีไฟต์ลิมิตช็อค อุปัทวเหตุเลดี้เก๊ะ สเตอริโอสหรัฐคลิปโหงว ฮาราคีรีทับซ้อน ฮิแจ๊กพอตแฮมเบอร์เกอร์คาร์โก้เกสต์เฮาส์ แช่แข็งติ่มซำฟีดครัวซองชัตเตอร์ ปาสเตอร์อิ่มแปร้แฟร์ คอร์รัปชั่น เซลส์เจ็ตจิตพิสัย ไมค์ เยอบีร่าฮ่องเต้โหลยโท่ย ไวอากร้าไฮแจ็คช็อต เลสเบี้ยน คาแรคเตอร์จิ๊กโก๋เทวาธิราช ฮาราคีรี ไทยแลนด์อมาตยาธิปไตยเบนโตะฮิบิ๊ก บร็อกโคลีไฟต์ลิมิตช็อค อุปัทวเหตุเลดี้เก๊ะ สเตอริโอสหรัฐคลิปโหงว ฮาราคีรีทับซ้อน ฮิแจ๊กพอตแฮมเบอร์เกอร์คาร์โก้เกสต์เฮาส์ แช่แข็งติ่มซำฟีดครัวซองชัตเตอร์</x>
+            </div>
+        </div>
+            </div>
+        </div>
+<!-- End of Section Blue -->
+<!-- Section White -->
+<div class="section-register">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1 text-center">
+                <!--<img src="images/course-header.png">-->
+                <h1 class="wow fadeInLeft" data-wow-delay="200ms">ลงทะเบียน<span>ปลดล็อคยอดขาย</span>ได้แล้ววันนี้</h1>
+                <h2 class="wow fadeInLeft" data-wow-delay="250ms">จากราคาปกติ <x>9,900 บาท</x> <span2>เหลือเพียง 5,900 บาท</span2> เท่านั้น</h2>
+                <p class="wow fadeInLeft" data-wow-delay="300ms">โปรโมชั่นนี้จะสิ้นสุดภายในวันที่ 15 มี.ค. 2560</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3 text-center wow fadeIn" data-wow-delay="350ms">
+                        <div class="form-group">
+                            <label></label>
+                            <input class="form-control" placeholder="ชื่อ - นามสกุล" type="text" id="txtName">
+                        </div>
+                        <div class="form-group">
+                            <label></label>
+                            <input class="form-control" placeholder="เบอร์โทรศัพท์" type="text" id="txtTel">
+                        </div>
+                        <div class="form-group">
+                            <label></label>
+                            <input class="form-control" placeholder="อีเมล" type="email" id="txtEmail">
+                        </div>
+                <div class="col-md-6 col-md-offset-3 col-xs-6 col-xs-offset-3 text-center">
+                        <img src="images/btn-register.png" style="margin-top: 10px"><br><br>
+                        - หรือ -<br><br>
+                        <img src="images/btn-facebook.png" onclick="checkLoginState();">
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End of Section White -->
+<!-- Section Footer -->
+<div class="section-footer">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <!-- รอข้อมูล -->
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End of Section Footer -->
+<!-- Js -->
+<script src="js/jquery-3.2.1.slim.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<!-- Wow Animate -->
+<script src='js/wow.js'></script>
+<!-- Triger Wow -->
+<script>new WOW().init();</script>
+<!-- End of Js -->
+<script src="js/mod.js"></script>
+</body>
+</html>
