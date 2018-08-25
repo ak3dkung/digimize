@@ -1,6 +1,6 @@
 /* Mainstyle */
 body {
-    font-family: 'Mitr', sans-serif;
+    font-family: 'Kanit', sans-serif;
     font-size: 1.6em;
     color: black;
     background-color: white;
@@ -125,6 +125,9 @@ body {
 .class-section x{
     text-decoration: line-through red;
 }
+.class-section p {
+    font-weight: 300;
+}
 .section-header img{
     width: 100%;
 }
@@ -139,6 +142,7 @@ body {
 }
 .class-section li {
     margin-left: 20px;
+    font-weight: 300;
 }
 .section-white {
     position: relative;
