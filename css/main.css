@@ -11,6 +11,27 @@ body {
 .spector-txt{
     margin-top: 90px;
 }
+.class-head-txt {
+    padding-top: 10px;
+    font-size: 1em ;
+}
+.class-head-txt p {
+    border: 1.5px solid white;
+    border-radius: 42px;
+    color: white;
+    padding: 5px;
+    font-size: 0.6em;
+}
+.class-head-txt h1{
+    font-size: 2em;
+}
+.class-head-txt h2 {
+    font-size: 1.7em;
+    color: white;
+}
+.class-head-txt span{
+    font-size: 1.9em;
+}
 .head-txt{
     padding-top: 50px;
     font-size: 1.8em;
@@ -95,8 +116,29 @@ body {
     background: linear-gradient(90deg, rgba(0, 135, 255,1) 20.09375%,rgba(0, 194, 255,1) 80.09375%); /* Standard syntax (must be last) */
     overflow: hidden;
 }
+.class-header {
+    padding-bottom: 50px;
+    background: #4570FF; /* For browsers that do not support gradients */
+    background: linear-gradient(90deg, rgba(0, 135, 255,1) 20.09375%,rgba(0, 194, 255,1) 80.09375%); /* Standard syntax (must be last) */
+    overflow: hidden;
+}
+.class-section x{
+    text-decoration: line-through red;
+}
 .section-header img{
     width: 100%;
+}
+.class-section {
+    position: relative;
+    z-index: 1;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+.class-section p {
+    font-size: 1.1em;
+}
+.class-section li {
+    margin-left: 20px;
 }
 .section-white {
     position: relative;
@@ -237,6 +279,26 @@ body {
     .navbar-brand img {
         width: 100px;
         margin-left: 120px;
+    }
+    .class-head-txt h1{
+        font-size: 1.6em;
+    }
+    .class-head-txt h2 {
+        font-size: 1.2em;
+        color: white;
+    }
+    .class-head-txt span{
+        font-size: 1.8em;
+    }
+    .class-section p {
+        font-size: 0.8em;
+    }
+    .class-section h2 {
+        font-size: 1em;
+    }
+    .class-section li {
+        margin-left: 10px;
+        font-size: 0.8em;
     }
     .head-txt h1{
         font-size: 0.7em;
