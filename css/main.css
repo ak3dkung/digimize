@@ -354,7 +354,7 @@ body {
     }
     .navbar-brand img {
         width: 100px;
-        margin-left: 120px;
+        margin-left: 140px;
     }
     .class-head-txt h1{
         font-size: 1.6em;
@@ -409,6 +409,13 @@ body {
     }
     .section-register span {
         font-size: 1.4em;
+    }
+}
+/* ให้ใช้ค่านี้เมื่อมีหน้าจอขนาดของจอ iPhone X */
+@media only screen and (min-device-width : 375px) and (max-device-width : 812px) {
+    .navbar-brand img {
+        width: 100px;
+        margin-left: 120px;
     }
 }
 /* ให้ใช้ค่านี้เมื่อมีหน้าจอขนาดของจอ iPad */
