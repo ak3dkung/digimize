@@ -44,19 +44,34 @@ body {
     font-size: 0.9em;
 }
 .head-txt h1{
-    font-size: 1.2em;
+    font-size: 1.5em;
+    color: white;
 }
 .head-txt h2 {
-    font-size: 1em;
+    margin-top: -10px;
+    font-size: 1.9em;
     color: white;
+}
+.head-txt h3 {
+    color: white;
+    font-weight: 300;
+}
+.head-txt h4 {
+    color: whitesmoke;
+}
+.head-txt x {
+    text-decoration: line-through white;
+}
+.head-txt x2 {
+    text-decoration: line-through red;
 }
 .head-txt span{
     font-size: 1.9em;
 }
 .pro_btn {
-    font-size: 16px;
+    font-size: 0.8em;
     line-height: 40px;
-    font-weight: 600;
+    font-weight: 400;
     letter-spacing: 1.6px;
     text-transform: uppercase;
     color: #fff;
@@ -109,17 +124,73 @@ body {
     transform: scale(1);
     opacity: 1;
 }
+.pro_btn-2 {
+    font-size: 0.9em;
+    line-height: 40px;
+    font-weight: 400;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+    color: #000000;
+    border: 1px solid #000000;
+    padding: 10px 47px 8px;
+    border-radius: 50px;
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.pro_btn-2:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #00c2ff;
+    -webkit-transform: scaleX(0);
+    -ms-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 0 50%;
+    -ms-transform-origin: 0 50%;
+    transform-origin: 0 50%;
+    -webkit-transition-property: -webkit-transform;
+    transition-property: -webkit-transform;
+    -o-transition-property: transform;
+    transition-property: transform;
+    transition-property: transform, -webkit-transform;
+    -webkit-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-timing-function: ease-out;
+    -o-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+.pro_btn-2:hover {
+    color: #ffffff;
+    -webkit-box-shadow: 7.5px 12.99px 25px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 7.5px 12.99px 25px 0px rgba(0, 0, 0, 0.15);
+}
+.pro_btn-2:hover:before {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+}
 .section-header {
     min-height: 100%;
-    padding-bottom: 50px;
+    padding-bottom: 60px;
     background: #4570FF; /* For browsers that do not support gradients */
-    background: linear-gradient(90deg, rgba(0, 135, 255,1) 20.09375%,rgba(0, 194, 255,1) 80.09375%); /* Standard syntax (must be last) */
+    background: linear-gradient(70.53413299164754deg, rgba(0, 194, 255,1) 20.4375%,rgba(0, 194, 255,1) 27.989583333333336%,rgba(0, 135, 255,1) 56.68750000000001%);
     overflow: hidden;
 }
 .class-header {
     padding-bottom: 50px;
     background: #4570FF; /* For browsers that do not support gradients */
-    background: linear-gradient(90deg, rgba(0, 135, 255,1) 20.09375%,rgba(0, 194, 255,1) 80.09375%); /* Standard syntax (must be last) */
+    background: linear-gradient(179.19871266989298deg, rgba(0, 194, 255,1) 7.754820936639119%,rgba(0, 194, 255,1) 31.227043158861346%,rgba(0, 135, 255,1) 86.5426997245179%); /* Standard syntax (must be last) */
     overflow: hidden;
 }
 .class-section x{
@@ -147,12 +218,13 @@ body {
 .section-white {
     position: relative;
     z-index: 1;
-    padding-top: 60px;
+    padding-top: 30px;
     padding-bottom: 60px;
 }
 .section-white p{
     display: inline-block;
-    font-size: 1.3em;
+    font-size: 1.2em;
+    font-weight: 300;
 }
 .section-white x{
     font-size: 1.4em;
@@ -278,7 +350,7 @@ body {
 /* ให้ใช้ค่านี้เมื่อมีหน้าจอขนาด 320 px ไปจนถึง 736px ขนาดของจอ iPhone 5 - iPhone 8 Plus */
 @media only screen and (min-device-width : 320px) and (max-device-width : 736px) {
     .section-header{
-        height: 700px;
+        height: 800px;
     }
     .navbar-brand img {
         width: 100px;
@@ -305,9 +377,16 @@ body {
         font-size: 0.8em;
     }
     .head-txt h1{
-        font-size: 0.7em;
+        font-size: 1.1em;
     }
     .head-txt h2 {
+        font-size: 1.4em;
+    }
+    .head-txt h3 {
+        font-size: 0.7em;
+        font-weight: 300;
+    }
+    .head-txt h4 {
         font-size: 0.6em;
     }
     .head-txt span{
