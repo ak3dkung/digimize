@@ -1,9 +1,16 @@
 /* Mainstyle */
+@import "reset.css";
+@import "animate.css";
+@import "bootstrap.min.css";
 body {
     font-family: 'Kanit', sans-serif;
     font-size: 1.6em;
     color: black;
     background-color: white;
+}
+.glyphicon {
+    font-family: 'Glyphicons Halflings' !important;
+    font-size: 18px;
 }
 .spector{
     margin-top: 40px;
@@ -243,20 +250,23 @@ body {
 .section-orange {
     position: relative;
     z-index: 6;
-    padding-top: 60px;
+    padding-top: 30px;
     padding-bottom: 30px;
-    background: linear-gradient(90deg, rgba(255, 201, 64,1) 20.09375%,rgba(255, 200, 63,1) 20.09375%,rgba(255, 144, 26,1) 80.09375%);
-}
-.section-orange img {
-    width: 100%;
+    background: #f09433;
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
 }
 .section-orange h1 {
     font-size: 1.8em;
     padding: 0px 10px;
 }
 .section-orange p{
-    color: #525252;
     font-size: 1.2em;
+}
+.header-profile {
+    padding-bottom: 80px;
 }
 .section-blue {
     padding: 30px 30px;
@@ -317,8 +327,8 @@ body {
     color: #FF901A;
 }
 .section-footer {
-    padding-top: 60px;
-    padding-bottom: 30px;
+    padding-top: 30px;
+    padding-bottom: 15px;
     background: linear-gradient(90deg, rgba(255, 201, 64,1) 20.09375%,rgba(255, 200, 63,1) 20.09375%,rgba(255, 144, 26,1) 80.09375%);
 }
 .floating {
@@ -327,11 +337,25 @@ body {
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
 }
-
 @keyframes floating {
     from { transform: translate(0,  0px); }
     65%  { transform: translate(0, 15px); }
     to   { transform: translate(0, -0px); }
+}
+.no-padding {
+    padding: 0px;
+}
+.images-badge {
+    background: url(../images/Badge.png) no-repeat top left;
+    background-size: 100% auto;
+    width: 300px;
+    height: 100px;
+}
+.txt-profile {
+    padding-top: 10px;
+}
+.min-padding {
+    padding: 1px;
 }
 /* Edit Boostrap */
 .navbar-default {
@@ -344,71 +368,105 @@ body {
 }
 .navbar-brand img{
     width: 150px;
-    margin-left: 40px;
+    margin: 0 auto;
 }
 /* Responsive Mobile Size  */
 /* ให้ใช้ค่านี้เมื่อมีหน้าจอขนาด 320 px ไปจนถึง 736px ขนาดของจอ iPhone 5 - iPhone 8 Plus */
 @media only screen and (min-device-width : 320px) and (max-device-width : 736px) {
-    .section-header{
+    .section-header {
         height: 800px;
     }
+
     .navbar-brand img {
         width: 100px;
         margin-left: 140px;
     }
-    .class-head-txt h1{
+
+    .class-head-txt h1 {
         font-size: 1.6em;
     }
+
     .class-head-txt h2 {
         font-size: 1.2em;
         color: white;
     }
-    .class-head-txt span{
+
+    .class-head-txt span {
         font-size: 1.8em;
     }
+
     .class-section p {
         font-size: 0.8em;
     }
+
     .class-section h2 {
         font-size: 1em;
     }
+
     .class-section li {
         margin-left: 10px;
         font-size: 0.8em;
     }
-    .head-txt h1{
+
+    .head-txt h1 {
         font-size: 1.1em;
     }
+
     .head-txt h2 {
         font-size: 1.4em;
     }
+
     .head-txt h3 {
         font-size: 0.7em;
         font-weight: 300;
     }
+
     .head-txt h4 {
         font-size: 0.6em;
     }
-    .head-txt span{
+
+    .head-txt span {
         font-size: 1.9em;
     }
-    .head-txt p{
+
+    .head-txt p {
         font-size: 0.7em;
     }
-    .section-register h1{
+
+    .section-register h1 {
         font-size: 2em;
     }
-    .section-register h2{
+
+    .section-register h2 {
         font-size: 1.5em;
     }
-    .section-register p{
+
+    .section-register p {
         font-size: 1em;
     }
-    .section-register x{
+
+    .section-register x {
         text-decoration: line-through red;
     }
+
     .section-register span {
         font-size: 1.4em;
+    }
+    .section-orange {
+        padding-top: 10px;
+    }
+    .header-profile {
+        padding-bottom: 30px;
+    }
+    .images-profile {
+        padding: 30px;
+        padding-top: 0px;
+    }
+    .logo-footer {
+        padding-bottom: 10px;
+    }
+    .social_icon {
+        padding-top: 10px;
     }
 }
 /* ให้ใช้ค่านี้เมื่อมีหน้าจอขนาดของจอ iPhone X */
@@ -437,4 +495,63 @@ body {
 
 }
 @media only screen and (min-device-width : 1920px) {
+}
+.thank-page {
+    padding-top: 100px;
+}
+
+.lds-ellipsis {
+    display: inline-block;
+    position: relative;
+    width: 64px;
+    height: 64px;
+}
+.lds-ellipsis div {
+    position: absolute;
+    top: 27px;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background: #cef;
+    animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+.lds-ellipsis div:nth-child(1) {
+    left: 6px;
+    animation: lds-ellipsis1 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(2) {
+    left: 6px;
+    animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(3) {
+    left: 26px;
+    animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(4) {
+    left: 45px;
+    animation: lds-ellipsis3 0.6s infinite;
+}
+@keyframes lds-ellipsis1 {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+@keyframes lds-ellipsis3 {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0);
+    }
+}
+@keyframes lds-ellipsis2 {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(19px, 0);
+    }
 }
