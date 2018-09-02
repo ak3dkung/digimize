@@ -137,8 +137,8 @@ body {
     font-weight: 400;
     letter-spacing: 1.6px;
     text-transform: uppercase;
-    color: #000000;
-    border: 1px solid #000000;
+    color: white;
+    border: 1px solid white;
     padding: 10px 47px 8px;
     border-radius: 50px;
     -webkit-transition: all 0.3s linear;
@@ -157,7 +157,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: #00c2ff;
+    background: yellow;
     -webkit-transform: scaleX(0);
     -ms-transform: scaleX(0);
     transform: scaleX(0);
@@ -177,11 +177,68 @@ body {
     transition-timing-function: ease-out;
 }
 .pro_btn-2:hover {
-    color: #ffffff;
+    color: black;
     -webkit-box-shadow: 7.5px 12.99px 25px 0px rgba(0, 0, 0, 0.15);
     box-shadow: 7.5px 12.99px 25px 0px rgba(0, 0, 0, 0.15);
 }
 .pro_btn-2:hover:before {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+}
+
+.pro_btn-3 {
+    font-size: 0.9em;
+    line-height: 40px;
+    font-weight: 400;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+    color: black;
+    border: 1px solid black;
+    padding: 10px 47px 8px;
+    border-radius: 50px;
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.pro_btn-3:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: hotpink;
+    -webkit-transform: scaleX(0);
+    -ms-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 0 50%;
+    -ms-transform-origin: 0 50%;
+    transform-origin: 0 50%;
+    -webkit-transition-property: -webkit-transform;
+    transition-property: -webkit-transform;
+    -o-transition-property: transform;
+    transition-property: transform;
+    transition-property: transform, -webkit-transform;
+    -webkit-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-timing-function: ease-out;
+    -o-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+.pro_btn-3:hover {
+    color: black;
+    -webkit-box-shadow: 7.5px 12.99px 25px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 7.5px 12.99px 25px 0px rgba(0, 0, 0, 0.15);
+}
+.pro_btn-3:hover:before {
     -webkit-transform: scale(1);
     -ms-transform: scale(1);
     transform: scale(1);
@@ -222,14 +279,63 @@ body {
     margin-left: 20px;
     font-weight: 300;
 }
+.section-shortcut {
+    overflow: hidden;
+    position: relative;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.block-content {
+    display: inline-block;
+    padding-top: 20px;
+}
+.information-txt {
+    display: inline-block;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+.icon-register {
+    margin: 0 auto;
+    background: url(../images/register.png) no-repeat top left;
+    background-size: 100% auto;
+    width: 118px;
+    height: 118px;
+}
+.the-brain {
+    margin: 0 auto;
+    background: url(../images/1-brain.png) no-repeat top left;
+    background-size: 100% auto;
+    width: 200px;
+    height: 200px;
+}
+.the-todolist {
+    margin: 0 auto;
+    background: url(../images/2-todolist.png) no-repeat top left;
+    background-size: 100% auto;
+    width: 200px;
+    height: 200px;
+}
+.the-rankup {
+    margin: 0 auto;
+    background: url(../images/3-rankup.png) no-repeat top left;
+    background-size: 100% auto;
+    width: 200px;
+    height: 200px;
+}
 .section-white {
     position: relative;
+    background: url(../images/background_middle.jpg) no-repeat top left;
+    background-size: 100% auto;
     z-index: 1;
     padding-top: 30px;
     padding-bottom: 60px;
 }
+.section-white h2 {
+    color: yellow;
+}
 .section-white p{
     display: inline-block;
+    color: white;
     font-size: 1.2em;
     font-weight: 300;
 }
@@ -246,6 +352,10 @@ body {
     position: absolute;
     z-index: 2;
     top:-140px;
+}
+.section-location {
+    position: relative;
+    overflow: hidden;
 }
 .section-orange {
     position: relative;
@@ -300,11 +410,8 @@ body {
 .section-register img {
     width: 100%;
 }
-.section-register h1{
-    font-size: 4em;
-}
 .section-register h2{
-    font-size: 3.5em;
+    font-size: 2.5em;
 }
 .section-register p{
     font-size: 2em;
@@ -323,7 +430,7 @@ body {
     border: transparent;
     outline: none;
     background: transparent;
-    border-bottom: 1px solid black;
+    border: 1px solid black;
     color: #FF901A;
 }
 .section-footer {
@@ -376,7 +483,11 @@ body {
     .section-header {
         height: 800px;
     }
-
+    .section-white {
+        background: url(../images/background_middle.jpg) center fixed;
+        background-size: auto;
+        padding-bottom: 30px;
+    }
     .navbar-brand img {
         width: 100px;
         margin-left: 140px;
